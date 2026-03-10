@@ -11,3 +11,5 @@ scikit-learn
 typing==3.7.4.3
 typing-inspection==0.4.2
 typing_extensions==4.15.0
+gunicorn
+uvicorn
