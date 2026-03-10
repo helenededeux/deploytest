@@ -21,6 +21,10 @@ def prediction(req_data: str) -> List[str]:
 app = FastAPI(description="L'API HTTP pour mon projet OpenClassrooms «Prédiction de l'étiquetage des questions Stackoverflow»", )
 
 
+@app.get("/")
+def home():
+    return {"message": "it works!"}
+
 @app.post("/predict")
 async def predict(req: Request) -> Any:
     req_data = (await req.body()).decode()
