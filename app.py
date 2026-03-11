@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import joblib
-from typing import List
 
 # Chargement des modèles (décommente quand tu seras prêt, pour tester le démarrage d'abord)
 # model = joblib.load('models/best_estimator_TfidfVectorizer_80000_LogisticRegression.joblib')
